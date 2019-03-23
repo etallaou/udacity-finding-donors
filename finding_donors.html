@@ -13151,7 +13151,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -13268,73 +13268,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">n_greater_50k</span><span class="o">/</span><span class="n">n_records</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[21]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">n_records</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>45222</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Total number of records</span>
@@ -13425,7 +13359,7 @@ Percentage of individuals making more than $50,000: 24.7843969749%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Split the data into features and target label</span>
@@ -13474,43 +13408,7 @@ Percentage of individuals making more than $50,000: 24.7843969749%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">features_raw</span><span class="o">.</span><span class="n">columns</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[27]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Index([u&#39;age&#39;, u&#39;workclass&#39;, u&#39;education_level&#39;, u&#39;education-num&#39;,
-       u&#39;marital-status&#39;, u&#39;occupation&#39;, u&#39;relationship&#39;, u&#39;race&#39;, u&#39;sex&#39;,
-       u&#39;capital-gain&#39;, u&#39;capital-loss&#39;, u&#39;hours-per-week&#39;, u&#39;native-country&#39;],
-      dtype=&#39;object&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Log-transform the skewed features</span>
@@ -13560,7 +13458,7 @@ Percentage of individuals making more than $50,000: 24.7843969749%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import sklearn.preprocessing.StandardScaler</span>
@@ -13784,23 +13682,14 @@ Percentage of individuals making more than $50,000: 24.7843969749%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: One-hot encode the &#39;features_raw&#39; data using pandas.get_dummies()</span>
-<span class="n">features_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="n">features_log_minmax_transform</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">col_data</span> <span class="ow">in</span> <span class="n">features_log_minmax_transform</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">col_data</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="nb">object</span><span class="p">:</span>
-            <span class="c1"># Example: &#39;school&#39; =&gt; &#39;school_GP&#39; and &#39;school_MS&#39;</span>
-        <span class="n">col_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">col_data</span><span class="p">,</span> <span class="n">prefix</span> <span class="o">=</span> <span class="n">col</span><span class="p">)</span>  
-        
-        <span class="c1"># Collect the revised columns</span>
-    <span class="n">features_final</span> <span class="o">=</span> <span class="n">features_final</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">col_data</span><span class="p">)</span>
-
+<span class="n">features_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">features_log_minmax_transform</span><span class="p">)</span>
 
 <span class="c1"># TODO: Encode the &#39;income_raw&#39; data to numerical values</span>
-<span class="n">income</span> <span class="o">=</span> <span class="n">income_raw</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="s2">&quot;&lt;=50K&quot;</span><span class="p">,</span><span class="s2">&quot;&gt;50K&quot;</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">income</span> <span class="o">=</span> <span class="n">income_raw</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;&lt;=50K&quot;</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># Print the number of features after one-hot encoding</span>
 <span class="n">encoded</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">features_final</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -13825,35 +13714,11 @@ Percentage of individuals making more than $50,000: 24.7843969749%
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>103 total features after one-hot encoding.
-[&#39;age&#39;, &#39;workclass_ Federal-gov&#39;, &#39;workclass_ Local-gov&#39;, &#39;workclass_ Private&#39;, &#39;workclass_ Self-emp-inc&#39;, &#39;workclass_ Self-emp-not-inc&#39;, &#39;workclass_ State-gov&#39;, &#39;workclass_ Without-pay&#39;, &#39;education_level_ 10th&#39;, &#39;education_level_ 11th&#39;, &#39;education_level_ 12th&#39;, &#39;education_level_ 1st-4th&#39;, &#39;education_level_ 5th-6th&#39;, &#39;education_level_ 7th-8th&#39;, &#39;education_level_ 9th&#39;, &#39;education_level_ Assoc-acdm&#39;, &#39;education_level_ Assoc-voc&#39;, &#39;education_level_ Bachelors&#39;, &#39;education_level_ Doctorate&#39;, &#39;education_level_ HS-grad&#39;, &#39;education_level_ Masters&#39;, &#39;education_level_ Preschool&#39;, &#39;education_level_ Prof-school&#39;, &#39;education_level_ Some-college&#39;, &#39;education-num&#39;, &#39;marital-status_ Divorced&#39;, &#39;marital-status_ Married-AF-spouse&#39;, &#39;marital-status_ Married-civ-spouse&#39;, &#39;marital-status_ Married-spouse-absent&#39;, &#39;marital-status_ Never-married&#39;, &#39;marital-status_ Separated&#39;, &#39;marital-status_ Widowed&#39;, &#39;occupation_ Adm-clerical&#39;, &#39;occupation_ Armed-Forces&#39;, &#39;occupation_ Craft-repair&#39;, &#39;occupation_ Exec-managerial&#39;, &#39;occupation_ Farming-fishing&#39;, &#39;occupation_ Handlers-cleaners&#39;, &#39;occupation_ Machine-op-inspct&#39;, &#39;occupation_ Other-service&#39;, &#39;occupation_ Priv-house-serv&#39;, &#39;occupation_ Prof-specialty&#39;, &#39;occupation_ Protective-serv&#39;, &#39;occupation_ Sales&#39;, &#39;occupation_ Tech-support&#39;, &#39;occupation_ Transport-moving&#39;, &#39;relationship_ Husband&#39;, &#39;relationship_ Not-in-family&#39;, &#39;relationship_ Other-relative&#39;, &#39;relationship_ Own-child&#39;, &#39;relationship_ Unmarried&#39;, &#39;relationship_ Wife&#39;, &#39;race_ Amer-Indian-Eskimo&#39;, &#39;race_ Asian-Pac-Islander&#39;, &#39;race_ Black&#39;, &#39;race_ Other&#39;, &#39;race_ White&#39;, &#39;sex_ Female&#39;, &#39;sex_ Male&#39;, &#39;capital-gain&#39;, &#39;capital-loss&#39;, &#39;hours-per-week&#39;, &#39;native-country_ Cambodia&#39;, &#39;native-country_ Canada&#39;, &#39;native-country_ China&#39;, &#39;native-country_ Columbia&#39;, &#39;native-country_ Cuba&#39;, &#39;native-country_ Dominican-Republic&#39;, &#39;native-country_ Ecuador&#39;, &#39;native-country_ El-Salvador&#39;, &#39;native-country_ England&#39;, &#39;native-country_ France&#39;, &#39;native-country_ Germany&#39;, &#39;native-country_ Greece&#39;, &#39;native-country_ Guatemala&#39;, &#39;native-country_ Haiti&#39;, &#39;native-country_ Holand-Netherlands&#39;, &#39;native-country_ Honduras&#39;, &#39;native-country_ Hong&#39;, &#39;native-country_ Hungary&#39;, &#39;native-country_ India&#39;, &#39;native-country_ Iran&#39;, &#39;native-country_ Ireland&#39;, &#39;native-country_ Italy&#39;, &#39;native-country_ Jamaica&#39;, &#39;native-country_ Japan&#39;, &#39;native-country_ Laos&#39;, &#39;native-country_ Mexico&#39;, &#39;native-country_ Nicaragua&#39;, &#39;native-country_ Outlying-US(Guam-USVI-etc)&#39;, &#39;native-country_ Peru&#39;, &#39;native-country_ Philippines&#39;, &#39;native-country_ Poland&#39;, &#39;native-country_ Portugal&#39;, &#39;native-country_ Puerto-Rico&#39;, &#39;native-country_ Scotland&#39;, &#39;native-country_ South&#39;, &#39;native-country_ Taiwan&#39;, &#39;native-country_ Thailand&#39;, &#39;native-country_ Trinadad&amp;Tobago&#39;, &#39;native-country_ United-States&#39;, &#39;native-country_ Vietnam&#39;, &#39;native-country_ Yugoslavia&#39;]
+[&#39;age&#39;, &#39;education-num&#39;, &#39;capital-gain&#39;, &#39;capital-loss&#39;, &#39;hours-per-week&#39;, &#39;workclass_ Federal-gov&#39;, &#39;workclass_ Local-gov&#39;, &#39;workclass_ Private&#39;, &#39;workclass_ Self-emp-inc&#39;, &#39;workclass_ Self-emp-not-inc&#39;, &#39;workclass_ State-gov&#39;, &#39;workclass_ Without-pay&#39;, &#39;education_level_ 10th&#39;, &#39;education_level_ 11th&#39;, &#39;education_level_ 12th&#39;, &#39;education_level_ 1st-4th&#39;, &#39;education_level_ 5th-6th&#39;, &#39;education_level_ 7th-8th&#39;, &#39;education_level_ 9th&#39;, &#39;education_level_ Assoc-acdm&#39;, &#39;education_level_ Assoc-voc&#39;, &#39;education_level_ Bachelors&#39;, &#39;education_level_ Doctorate&#39;, &#39;education_level_ HS-grad&#39;, &#39;education_level_ Masters&#39;, &#39;education_level_ Preschool&#39;, &#39;education_level_ Prof-school&#39;, &#39;education_level_ Some-college&#39;, &#39;marital-status_ Divorced&#39;, &#39;marital-status_ Married-AF-spouse&#39;, &#39;marital-status_ Married-civ-spouse&#39;, &#39;marital-status_ Married-spouse-absent&#39;, &#39;marital-status_ Never-married&#39;, &#39;marital-status_ Separated&#39;, &#39;marital-status_ Widowed&#39;, &#39;occupation_ Adm-clerical&#39;, &#39;occupation_ Armed-Forces&#39;, &#39;occupation_ Craft-repair&#39;, &#39;occupation_ Exec-managerial&#39;, &#39;occupation_ Farming-fishing&#39;, &#39;occupation_ Handlers-cleaners&#39;, &#39;occupation_ Machine-op-inspct&#39;, &#39;occupation_ Other-service&#39;, &#39;occupation_ Priv-house-serv&#39;, &#39;occupation_ Prof-specialty&#39;, &#39;occupation_ Protective-serv&#39;, &#39;occupation_ Sales&#39;, &#39;occupation_ Tech-support&#39;, &#39;occupation_ Transport-moving&#39;, &#39;relationship_ Husband&#39;, &#39;relationship_ Not-in-family&#39;, &#39;relationship_ Other-relative&#39;, &#39;relationship_ Own-child&#39;, &#39;relationship_ Unmarried&#39;, &#39;relationship_ Wife&#39;, &#39;race_ Amer-Indian-Eskimo&#39;, &#39;race_ Asian-Pac-Islander&#39;, &#39;race_ Black&#39;, &#39;race_ Other&#39;, &#39;race_ White&#39;, &#39;sex_ Female&#39;, &#39;sex_ Male&#39;, &#39;native-country_ Cambodia&#39;, &#39;native-country_ Canada&#39;, &#39;native-country_ China&#39;, &#39;native-country_ Columbia&#39;, &#39;native-country_ Cuba&#39;, &#39;native-country_ Dominican-Republic&#39;, &#39;native-country_ Ecuador&#39;, &#39;native-country_ El-Salvador&#39;, &#39;native-country_ England&#39;, &#39;native-country_ France&#39;, &#39;native-country_ Germany&#39;, &#39;native-country_ Greece&#39;, &#39;native-country_ Guatemala&#39;, &#39;native-country_ Haiti&#39;, &#39;native-country_ Holand-Netherlands&#39;, &#39;native-country_ Honduras&#39;, &#39;native-country_ Hong&#39;, &#39;native-country_ Hungary&#39;, &#39;native-country_ India&#39;, &#39;native-country_ Iran&#39;, &#39;native-country_ Ireland&#39;, &#39;native-country_ Italy&#39;, &#39;native-country_ Jamaica&#39;, &#39;native-country_ Japan&#39;, &#39;native-country_ Laos&#39;, &#39;native-country_ Mexico&#39;, &#39;native-country_ Nicaragua&#39;, &#39;native-country_ Outlying-US(Guam-USVI-etc)&#39;, &#39;native-country_ Peru&#39;, &#39;native-country_ Philippines&#39;, &#39;native-country_ Poland&#39;, &#39;native-country_ Portugal&#39;, &#39;native-country_ Puerto-Rico&#39;, &#39;native-country_ Scotland&#39;, &#39;native-country_ South&#39;, &#39;native-country_ Taiwan&#39;, &#39;native-country_ Thailand&#39;, &#39;native-country_ Trinadad&amp;Tobago&#39;, &#39;native-country_ United-States&#39;, &#39;native-country_ Vietnam&#39;, &#39;native-country_ Yugoslavia&#39;]
 </pre>
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: One-hot encode the &#39;features_log_minmax_transform&#39; data using pandas.get_dummies()</span>
-<span class="n">features_final</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">()</span>
-
-<span class="c1"># TODO: Encode the &#39;income_raw&#39; data to numerical values</span>
-<span class="n">income</span> <span class="o">=</span> <span class="bp">None</span>
-
-<span class="c1"># Print the number of features after one-hot encoding</span>
-<span class="n">encoded</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">features_final</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;{} total features after one-hot encoding.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">encoded</span><span class="p">)))</span>
-
-<span class="c1"># Uncomment the following line to see the encoded feature names</span>
-<span class="c1"># print encoded</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
@@ -13869,7 +13734,7 @@ Percentage of individuals making more than $50,000: 24.7843969749%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import train_test_split</span>
@@ -13958,10 +13823,80 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">naive_prediction</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">features_log_minmax_transform</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])]</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">naive_prediction</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">income</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>11208</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">x</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([False, False,  True,  True, False])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#http://kawahara.ca/how-to-compute-truefalse-positives-and-truefalse-negatives-in-python-for-binary-classification-problems/</span>
+<span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">TP = np.sum(income) # Counting the ones as this is the naive case. Note that &#39;income&#39; is the &#39;income_raw&#39; data </span>
 <span class="sd">encoded to numerical values done in the data preprocessing step.</span>
 <span class="sd">FP = income.count() - TP # Specific to the naive case</span>
@@ -13975,9 +13910,20 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">recall_score</span>
 
 <span class="n">naive_prediction</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">features_log_minmax_transform</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])]</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">income</span><span class="p">,</span> <span class="n">naive_prediction</span><span class="p">)</span>
-<span class="n">recall</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">income</span><span class="p">,</span><span class="n">naive_prediction</span><span class="p">)</span>
-<span class="n">precision</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">income</span><span class="p">,</span> <span class="n">naive_prediction</span><span class="p">)</span>
+
+<span class="n">TP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">naive_prediction</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">income</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">TN</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">FP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">naive_prediction</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">income</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">FN</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># accuracy = TP+TN/TP+FP+FN+TN</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="p">(</span><span class="n">TP</span><span class="o">+</span><span class="n">TN</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">naive_prediction</span><span class="p">))</span>
+
+<span class="c1"># recall = [True Positives/(True Positives + False Negatives)]</span>
+<span class="n">recall</span> <span class="o">=</span> <span class="n">TP</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">(</span><span class="n">TP</span><span class="o">+</span><span class="n">FN</span><span class="p">)</span>
+
+<span class="c1"># precision = [True Positives/(True Positives + False Positives)]</span>
+<span class="n">precision</span> <span class="o">=</span> <span class="n">TP</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">(</span><span class="n">TP</span><span class="o">+</span><span class="n">FP</span><span class="p">)</span>
+
 
 <span class="c1"># TODO: Calculate F-score using the formula above for beta = 0.5 and correct values for precision and recall.</span>
 <span class="n">fscore</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mf">0.5</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">precision</span><span class="o">*</span><span class="n">recall</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">0.5</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">precision</span><span class="o">+</span><span class="n">recall</span><span class="p">)</span>
@@ -14046,6 +13992,26 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
+<p><strong>Random Forest Classifier:</strong></p>
+<p>Random Forest can be used in E-Commerce to recommend or suggest what type of products your customer should see.</p>
+<p>The model is easy to use. It can deal very easily with categorical variables that do not expect linear characteristics or even characteristics that interact linearly. The model is also very appropriate for high dimensional spaces and a large number of training examples. Finally, it is more unlikely to be revised than a decision tree. However, it is more difficult to interpret a random forest than a decision tree.</p>
+<p>We should use this model because it is easy to use, handles categorical variables very well, and does not tend to over-fit like traditional decision trees.</p>
+<p><strong> Naive Bayes: </strong></p>
+<p>To classify Email as spam or not.</p>
+<p>The model works  well when there are lot of features or attributes, and it's simple and easy to understand. 
+It proves to be quite robust to irrelevant features, which it ignores. It learns and predicts very fast and it does not require lots of storage.</p>
+<p>However the disadvantage of the model is that it makes a strong assumption about the independance of the features.</p>
+<p>Because Naive Bayes provides good performance when there are lot of features, we should apply this model. After one-Hot encoding we get a dataset of 103 features.</p>
+<p><strong> Adaboost:</strong></p>
+<p>Adaboost is used for face detection.</p>
+<p>Boosted Decision Trees can give better results than Random Forests if the parameters are adjusted correctly. The tunender of many parameters is more expensive than Random Forests, and better results are not yet garated. Overtuning Bossted Decision Trees leads more easily to overfitting.
+However, the algorithm tends to be sensitive to noisy data and outliers. It can also be slow to train.
+ to be effective and accurate in its predictions, it should meet these three conditions:</p>
+<p>1) classifier should be trained on “enough” training examples</p>
+<p>2) it should provide a good fit to these examples by producing low training error</p>
+<p>3) it should be simple (in that simpler models are better than overly complex one)</p>
+<p>We can apply this model because we have not a very big dataset (45 222 records). 
+The model can be slow to train, however it shouldn't matter because we probably want to run the model periodically and not in real-time.</p>
 
 </div>
 </div>
@@ -14275,7 +14241,8 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
- Adaboost is the best model because  it has the better fscore and accuracy a on the testing set.</p>
+ Adaboost is the best model because  it has the better fscore and accuracy a on the testing set.
+The Adaboost algorithm tends to be slower in training than the Random Forest and GaussianNB. However, since we are probably not going to use the model as a real-time application, and since it is critical to accurately predict which candidate will earn more than $50,000, we should put accuracy before speed.</p>
 
 </div>
 </div>
@@ -14297,8 +14264,10 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> 
 The Adaboost combines weak learner  to build a strong model.</p>
-<p>-&gt; 1 The weak learner takes all the distributions and assign equal weight or attention to each observation.</p>
-<p>-&gt; 2: If there is any prediction error caused by first weaker learning algorithm, then we pay higher attention to observations having prediction error. Then, we apply the next weaker learning model.</p>
+<p>AdaBoost11 allows the continuous addition of weak classifiers (weak hypotheses, basic hypotheses) until a desired small training error is achieved.</p>
+<p>The aim of the AdaBoost algorithm is therefore to find weak classifiers and the associated factors and then to use it and a linear combination to generate a strong classifier.</p>
+<p>-&gt; 1: The Adaboost combines weak learners also known as basic learners (D1, D2 and D3) into a strong one..</p>
+<p>-&gt; 2: If there is a prediction error caused by the First Base Learning algorithm, more attention is paid to observations with prediction errors. Then we apply the next basic learning algorithm.</p>
 <p>-&gt; 3: Iterate Step 2 till the limit of weak learning algorithm is reached or higher accuracy is achieved.</p>
 <p>at the end, it combines the outputs from weak learner and creates a strong learner which eventually improves the prediction power of the model.</p>
 
@@ -14461,7 +14430,7 @@ Final F-score on the testing data: 0.7448
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-TODO</p>
+The accuracy of the optimized model and the F score are 0.8676 and 0.7448, and are better than the non-optimized model. The accuracy of the non-optimized model and the F score are 0.8576 and 0.7246, respectively. The accuracy and the F score have also improved compared to the naive predictor benchmarks. The accuracy of the naive predictor benchmarks and the F score are 0.2478 and 0.2917.</p>
 
 </div>
 </div>
@@ -14569,7 +14538,10 @@ age, hours-per-week,capital gain, capital loss and occupation</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-occupation is no longer one of the top five characteristics and a new candidate, education_level_bachelors comes instead</p>
+Age: There should be a high and positive correlation between age and income.
+Hours per week: The number of hours per week should be another important factor that influences income. Because Someone who works full-time has a higher income than someone who works part-time.
+Capital gain and loss: Capital should  be even highly correlated with income.
+Occupation: The occupation should be an important determinant of income than education_level_bachelors. For example, an Exec manager tends to be earning more money than machine-op-inspct. and Exec manager can have a low education_level_bachelors than the machine-op-inspct.</p>
 
 </div>
 </div>
@@ -14581,6 +14553,39 @@ occupation is no longer one of the top five characteristics and a new candidate,
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="mf">0.7448</span> <span class="o">-</span> <span class="mf">0.6733</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[29]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.07150000000000001</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -14655,7 +14660,8 @@ F-score on testing data: 0.6733
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The final model's F-score and accuracy on the reduced data are lower than the model including all the features.</p>
+The final model's F-score and accuracy on the reduced data are lower than the model including all the features.
+If it was a real-time application, I would consider the model based on the reduced data. However, in the case of CharityML, I would suggest using the model based on the full dataset because the F score has decreased by more than 7.15%.</p>
 
 </div>
 </div>
@@ -14680,13 +14686,34 @@ The final model's F-score and accuracy on the reduced data are lower than the mo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!!</span>jupyter nbconvert *.ipynb
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[30]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;[NbConvertApp] Converting notebook finding_donors.ipynb to html&#39;,
+ &#39;[NbConvertApp] Writing 497710 bytes to finding_donors.html&#39;]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
